@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
@@ -21,6 +22,45 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>My Awesome Page</title>
+        <meta name="description" content="This is the description of my awesome page for SEO." />
+        <meta name="keywords" content="awesome, page, SEO, Next.js" />
+        <link rel="canonical" href="https://www.example.com/current-page-url" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="My Awesome Page" />
+        <meta
+          property="og:description"
+          content="This is the description of my awesome page for social media."
+        />
+        <meta property="og:image" content="https://www.example.com/og-image.jpg" />
+        <meta property="og:url" content="https://www.example.com/current-page-url" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="My Awesome Page" />
+        <meta
+          name="twitter:description"
+          content="This is the description of my awesome page for social media."
+        />
+        <meta name="twitter:image" content="https://www.example.com/twitter-image.jpg" />
+
+        {/* Structured Data (JSON-LD) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebPage',
+              name: 'My Awesome Page',
+              description: 'This is the description of my awesome page for SEO.',
+              url: 'https://www.example.com/current-page-url',
+            }),
+          }}
+        />
+      </Head>
       <body className={inter.className}>{children}</body>
     </html>
   );
