@@ -11,7 +11,7 @@ export default function TitlebarImageList() {
   return (
     <ImageList sx={{ width: '100%', height: '100vh' }}>
       <ImageListItem key="Subheader" cols={2}>
-        <ListSubheader component="div">Kishtov.com</ListSubheader>
+        <ListSubheader component="div">KISHTOV.COM</ListSubheader>
       </ImageListItem>
       {itemData.map((item) => (
         <ImageListItem onClick={() => window.open(item.link, '_blank')} key={item.img}>

@@ -1,4 +1,4 @@
-import Blog from './mila/mila';
+import Portfolio from './mila/mila';
 import Billing from './andrey/billing';
 import Image from 'next/image';
 import Card from './card/card';
