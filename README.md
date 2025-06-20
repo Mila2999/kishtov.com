@@ -1,10 +1,64 @@
-# kishtov.com
+# Kishtov.com
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+A personal website and portfolio built with Next.js, showcasing services and information for Andrey Kishtov.
+
+## Project Overview
+
+Kishtov.com is a modern web application that serves as a personal website and portfolio. The site includes:
+
+- Personal profile and information
+- Services offered
+- Billing and payment integration with PayPal
+- Image gallery
+- Responsive design using Material UI and Tailwind CSS
+
+## Technology Stack
+
+- **Framework**: [Next.js 14](https://nextjs.org/)
+- **Frontend**: React 18
+- **Styling**: 
+  - [Material UI](https://mui.com/)
+  - [Tailwind CSS](https://tailwindcss.com/)
+  - Emotion for styled components
+- **Payment Processing**: PayPal React SDK
+- **Icons**: React Icons
+- **Type Safety**: TypeScript
+
+## Project Structure
+
+The project follows the Next.js App Router structure:
+
+- `/src/app/` - Main application code
+  - `/andrey/` - Personal profile and services pages
+  - `/card/` - Card component for displaying information
+  - `/image-list/` - Image gallery component
+  - `/mila/` - Section dedicated to Mila
+- `/public/` - Static assets
+- `/conf/` - Configuration files
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ 
+- npm, yarn, or pnpm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/andreykishtov/kishtov.com.git
+cd kishtov.com
+
+# Install dependencies
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+### Development
 
 ```bash
 npm run dev
@@ -12,28 +66,31 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm run build
+npm run start
+# or
+yarn build
+yarn start
+# or
+pnpm build
+pnpm start
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The site is configured for easy deployment on [Vercel](https://vercel.com/), the platform created by the makers of Next.js.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project is privately owned and maintained by Andrey Kishtov.
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# kishtov.com
+For inquiries, please reach out through the contact form on the website.
